@@ -1,0 +1,28 @@
+/* importing a font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #254D70;
+    padding: 16px 32px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.navbar-logo a{
+    color: #EFE4D2;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.navbar-links a{
+    margin-left: 24px;
+    font-size: 1rem;
+    color: #EFE4D2;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+    color: #FFDBDB;
+}
