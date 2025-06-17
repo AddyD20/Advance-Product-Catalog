@@ -1,0 +1,18 @@
+.breadcrumbs {
+    margin: 16px 0 ;
+    font-size: 1 rem;
+    background: #FFE6E1;
+    padding: 10px 10px ;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.breadcrumbs a{
+    color: #0E2148;
+    text-decoration: none;
+    font-weight: 400;
+    
+}
+
+.breadcrumbs span{
+    color:#0E2148;
+}

@@ -21,8 +21,25 @@
     font-size: 1rem;
     color: #EFE4D2;
     transition: color 0.2s;
+    text-decoration: none;
 }
 
 .navbar-links a:hover {
     color: #FFDBDB;
+}
+
+.cart-icon{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    background:#FFDBDB;
+    color: rebeccapurple;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -8px;
+    right: -16px;
 }

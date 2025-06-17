@@ -1,0 +1,20 @@
+.catalog-desc {
+    font-size: 1.1rem;
+    color:#131D4F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    border-left: 4px solid #254D70;
+    border-right: 4px solid #254D70;
+    border-radius: 6px;
+    line-height: 1.6;
+    width: fit-content;
+}
+
+.h2{
+    color: #131D4F;
+    text-align: center;
+}

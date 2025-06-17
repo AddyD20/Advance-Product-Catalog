@@ -1,22 +1,35 @@
 import React, { useEffect, useState } from "react";
 import { getAllProducts } from "../api/products";
 import ProductCard from "../components/ProductCard";
+import FilterProduct from "../components/FilterProduct";
+
+import "../components/ProductCard.css";
+import "./Home.css";
+import { data } from "react-router-dom";
 
 function Home() {
     const [products, setProducts] = useState([]);
+    const [page , setPage] = useState(1);
+    const [total, setTotal] = useState(0);
+    const limit = 12;
+
 
     useEffect(() => {
-        getAllProducts().then(setProducts);
+        getAllProducts().then(data => {
+            setProducts(data);
+        });
     }, []);
 
+
     return (
+        
+
         <div>
-            <h2>Product Catalog</h2>
-            <div>
-                {products.map(product =>
-                    <ProductCard key = {product.id} product={product} />
-                )}
-            </div>
+            <h2>Discover handpicked products tailored just for you — filter, explore, and find your perfect fit.</h2>
+            <p className="catalog-desc">
+                Browse our latest collection of handpicked products . Use the filters to narrow down by category , price , or rating and find exactly what you're looking for!
+            </p>
+            <FilterProduct products={products} />
         </div>
     );
 }
