@@ -24,7 +24,7 @@ function Home() {
     return (
         
 
-        <div>
+        <div className="catalog-container"> 
             <h2>Discover handpicked products tailored just for you — filter, explore, and find your perfect fit.</h2>
             <p className="catalog-desc">
                 Browse our latest collection of handpicked products . Use the filters to narrow down by category , price , or rating and find exactly what you're looking for!
